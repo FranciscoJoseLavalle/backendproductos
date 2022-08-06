@@ -1,0 +1,9 @@
+{{#if hasProducts}}
+    {{#each productos}}
+        <div>
+             <p>{{this.title}} - {{this.price}} - {{this.thumbnail}}</p>
+        </div>
+    {{/each}}
+{{else}}
+    <h1>No hay productos</h1>
+{{/if}}

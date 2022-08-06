@@ -1,0 +1,11 @@
+html
+    head
+        title="Productos"
+    body
+        if hasProducts
+            ul  
+                each producto in productos
+                    li 
+                        p=producto.title +" - "+ producto.price + " - " + producto.thumbnail
+        else
+            p="No hay productos"

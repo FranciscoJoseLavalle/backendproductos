@@ -1,0 +1,7 @@
+<% if (productos.length > 0) { %>
+    <% productos.forEach(product => { %>
+        <p><%= product.title %> - <%= product.price %> - <%= product.thumbnail %></p>
+    <% }) %>
+<% } else { %>
+   <p>No hay productos</p> 
+<% } %> 
